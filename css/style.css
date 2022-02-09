@@ -1,0 +1,206 @@
+/* GENERAL STYLE */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(31, 3, 39, 0.1)), url(../images/fondo2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* GRID */
+.gridContainer {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "menu"
+    "main"
+    "footer";
+  grid-template-rows: 15% 85% auto;
+}
+
+/* GRID ITEMS */
+
+.menu {
+  grid-area: menu;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* LOGO */
+
+.logo {
+  width: 80px;
+  height: 50px;
+}
+
+/* MENU */
+
+.offcanvas-body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(31, 3, 39, 0.1)), url(../images/fondoMenu..jpg);
+  padding: 0;
+
+}
+
+.navbar-nav {
+
+  height: 100%;
+  gap: 35px;
+
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.nav-item {
+
+  height: 17%;
+
+}
+
+.offcanvas-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(31, 3, 39, 0.1)), url(../images/fondoMenu..jpg);
+}
+
+.btn-close {
+  background-color: #9a7fc5;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.buttonNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 23px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: rgb(255, 255, 255);
+  font-family: "Bebas Neue", cursive;
+  font-weight: 800;
+  font-size: 600%;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.buttonNav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.buttonNav:hover::before {
+  width: 100%;
+}
+
+.buttonNav:hover {
+  color: rgb(0, 0, 0);
+
+
+}
+
+.buttonNav:active:before {
+  background: #b9b9b9;
+}
+
+/* MAIN */
+
+/*  */
+
+
+
+/* FOOTER */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap");
+
+.card {
+  /* background-color: rgba(36, 14, 36, 0.9); */
+  background-image: linear-gradient(rgba(15, 17, 22, 0.7), rgba(31, 3, 39, 0.5)), url(../images/fondo2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 2% 7%;
+}
+
+.logoFooter {
+  width: 100px;
+  padding: 10px;
+}
+
+body {
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(234, 237, 240);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul>li {
+  padding: 4px;
+  color: #ffffff;
+}
+
+ul>li:hover {
+  color: #a5a321;
+  cursor: pointer;
+}
+
+hr {
+  border-width: 3px;
+}
+
+.social>i {
+  padding: 1%;
+  font-size: 15px;
+}
+
+.social>i:hover {
+  color: #957bda;
+  cursor: pointer;
+}
+
+.policy>div {
+  padding: 4px;
+}
+
+.heading {
+  font-family: "Bebas Neue", cursive;
+  color: rgb(236, 89, 192);
+  font-weight: 500;
+  font-size: 300%;
+}
+
+.card-text {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 130%;
+}
+
+.divider {
+  border-top: 2px solid;
+}
