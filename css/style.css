@@ -30,7 +30,7 @@ body {
 
 .main {
   grid-area: main;
- 
+
 }
 
 .footer {
@@ -127,37 +127,61 @@ body {
 }
 
 /* MAIN */
-/* section 1 */
-.main{
+
+	/* MAIN INDEX */
+
+  .indexMain{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+  }
+
+  .indexMain h1{
+    color: white;
+    font-family: "Bebas Neue", cursive;
+    font-weight: 900;
+    font-size: 1000%;
+
+  }
+
+
+
+/* PAGES */
+.main {
   display: grid;
   grid-template-areas: "card1 card2 card3";
 }
 
-.cardContainer{
+.cardContainer {
   grid-area: card1;
   display: flex;
   justify-content: center;
   align-items: center;
 
 }
-.card2{
+
+.card2 {
   grid-area: card2;
-  
-  
+
+
 }
-.card3{
+
+.card3 {
   grid-area: card3;
- 
+
 }
 
 
-.card{
+.card {
   height: 80%;
   background-color: #ffffff;
 }
-.card-body{
+
+.card-body {
   background-color: #423b4e;
 }
+
 /*  */
 
 
