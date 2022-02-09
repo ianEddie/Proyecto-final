@@ -30,6 +30,7 @@ body {
 
 .main {
   grid-area: main;
+ 
 }
 
 .footer {
@@ -126,7 +127,37 @@ body {
 }
 
 /* MAIN */
+/* section 1 */
+.main{
+  display: grid;
+  grid-template-areas: "card1 card2 card3";
+}
 
+.cardContainer{
+  grid-area: card1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.card2{
+  grid-area: card2;
+  
+  
+}
+.card3{
+  grid-area: card3;
+ 
+}
+
+
+.card{
+  height: 80%;
+  background-color: #ffffff;
+}
+.card-body{
+  background-color: #423b4e;
+}
 /*  */
 
 
